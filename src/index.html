@@ -58,7 +58,7 @@
 
       <main>
         <!-- Info content -->
-        <section class="text-center mb-7">
+        <section class="text-center mb-10">
           <p class="text-md leading-6 text-grey-smoke">
             Upload your audio to Pod with a single click. We’ll then
             distribute your podcast to Spotify, Apple Podcasts, Google
@@ -67,7 +67,7 @@
         </section>
 
         <!-- Product svg -->
-        <section class="mb-10">
+        <section class="mb-14">
           <div class="flex w-full justify-between items-center">
             <!-- SPOTIFY -->
             <div>
@@ -110,17 +110,23 @@
         <!-- Email input -->
         <section>
           <form>
-            <div>
-              <label>
-                <input
-                  class="w-full rounded-full border-none py-3 px-6 text-[14px] bg-dark-blue-grey outline-0"
-                  type="email"
-                  placeholder="Email address"
-                />
-              </label>
+            <div class="mb-4">
+              <label for="email"></label>
+              <input
+                class="w-full rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-0"
+                type="email"
+                placeholder="Email address"
+                id="email"
+                name="email"
+              />
             </div>
             <div>
-              <button>Request Access</button>
+              <button
+                type="submit"
+                class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green text-[#000]"
+              >
+                Request Access
+              </button>
             </div>
           </form>
         </section>

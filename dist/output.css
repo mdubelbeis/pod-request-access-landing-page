@@ -486,6 +486,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
 .block{
   display: block;
 }
@@ -549,6 +557,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-dark-blue-grey{
   --tw-bg-opacity: 1;
   background-color: rgb(44 52 75 / var(--tw-bg-opacity));
+}
+
+.bg-mint-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 230 175 / var(--tw-bg-opacity));
 }
 
 .bg-mobile-pattern{
@@ -626,8 +639,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 14px;
 }
 
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-light{
   font-weight: 300;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-extrabold{
+  font-weight: 800;
+}
+
+.font-black{
+  font-weight: 900;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .uppercase{
@@ -664,6 +698,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-dark-blue-grey{
   --tw-text-opacity: 1;
   color: rgb(44 52 75 / var(--tw-text-opacity));
+}
+
+.text-dark-blue{
+  --tw-text-opacity: 1;
+  color: rgb(18 23 37 / var(--tw-text-opacity));
+}
+
+.text-\[\#000\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .bg-blend-overlay{
