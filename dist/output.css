@@ -478,6 +478,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: -10;
 }
 
+.m-0{
+  margin: 0px;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.block{
+  display: block;
+}
+
+.flex{
+  display: flex;
+}
+
 .h-screen{
   height: 100vh;
 }
@@ -496,6 +520,44 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-screen{
   width: 100vw;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-16 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
 }
 
 .bg-dark-blue{
@@ -523,13 +585,96 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: no-repeat;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-0{
+  padding: 0px;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
 .font-chivo-light{
   font-family: Chivo, sans-serif;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-\[52px\]{
+  font-size: 52px;
+}
+
+.text-\[24px\]{
+  font-size: 24px;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
+}
+
+.text-\[1\.5rem\]{
+  font-size: 1.5rem;
+}
+
+.text-\[1\.75rem\]{
+  font-size: 1.75rem;
+}
+
+.text-\[26px\]{
+  font-size: 26px;
+}
+
+.text-\[32px\]{
+  font-size: 32px;
+}
+
+.font-light{
+  font-weight: 300;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.leading-10{
+  line-height: 2.5rem;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
 }
 
 .text-mint-green{
   --tw-text-opacity: 1;
   color: rgb(84 230 175 / var(--tw-text-opacity));
+}
+
+.text-grey-smoke{
+  --tw-text-opacity: 1;
+  color: rgb(195 203 229 / var(--tw-text-opacity));
+}
+
+.text-pure-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-5{
