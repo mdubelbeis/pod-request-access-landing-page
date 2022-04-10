@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 .image {
-  @apply w-[64px];
+  @apply w-[64px] md:w-[100px];
 }
