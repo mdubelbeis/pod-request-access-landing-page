@@ -16,28 +16,37 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
-  <body class="text-grey-smoke font-chivo-light">
-    <div
-      class="bg-cover bg-mobile-pattern bg-no-repeat bg-dark-blue bg-blend-overlay h-screen p-6"
-    >
+  <body
+    class="relative text-grey-smoke font-chivo-light bg-cover bg-mobile-pattern bg-no-repeat bg-dark-blue bg-blend-overlay h-screen md:bg-none"
+  >
+    <div class="hidden md:block absolute top-0 right-0 md:h-[767]">
+      <img src="../assets/tablet/image-host.jpg" alt="" />
+    </div>
+    <div class="hidden md:block absolute md:bottom-0 md:left-6">
+      <img src="../assets/desktop/bg-pattern-dots.svg" alt="" />
+    </div>
+    <div class="p-6">
       <!-- Logo -->
-      <div class="flex justify-center my-14">
+      <div
+        class="flex justify-center my-14 md:justify-start md:my-6 md:mx-4"
+      >
         <img src="../assets/desktop/logo.svg" alt="logo" />
       </div>
-      <div class="mt-16 md:bg-dark-blue">
+      <div class="mt-16 md:bg-dark-blue relative">
         <main
-          class="flex flex-col justify-around md:relative space-y-10"
+          class="flex flex-col justify-around space-y-10 md:bg-dark-blue md:h-[509] md:w-[635] md:absolute md:left-2 md:top-[145px]"
         >
-          <header class="flex flex-col items-center">
+          <header class="flex flex-col items-center md:items-start">
             <!-- Title -->
-            <div>
+            <div class="md:mt-20">
               <h1
-                class="uppercase text-[24px] leading-10 font-light tracking-wider"
+                class="uppercase text-[24px] space-y-2 font-light tracking-wider md:text-5xl"
               >
                 <span class="text-mint-green block"
                   >Publish your podcasts</span
                 >
-                <span class="text-pure-white text-center block"
+                <span
+                  class="text-pure-white text-center block md:text-left"
                   >everywhere.</span
                 >
               </h1>
@@ -45,8 +54,8 @@
           </header>
 
           <!-- Info content -->
-          <section class="text-center">
-            <p class="text-md leading-6 text-grey-smoke">
+          <section class="text-center md:w-9/12">
+            <p class="text-md leading-6 text-grey-smoke md:text-left">
               Upload your audio to Pod with a single click. We’ll then
               distribute your podcast to Spotify, Apple Podcasts,
               Google Podcasts, Pocket Casts and more!
@@ -54,7 +63,7 @@
           </section>
 
           <div
-            class="flex flex-col space-y-12 md:relative md:flex md:flex-col-reverse"
+            class="flex flex-col space-y-12 md:relative md:flex md:flex-col-reverse md:w-9/12 md:p-10"
           >
             <!-- Product svg -->
             <section>
@@ -100,9 +109,11 @@
             </section>
 
             <!-- Email input -->
-            <section class="md:w-9/12">
+            <section>
               <form>
-                <div class="flex flex-col justify-center">
+                <div
+                  class="flex flex-col justify-center md:flex-col-reverse"
+                >
                   <label for="email"></label>
                   <input
                     class="w-full mb-4 rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-none md:absolute md:top-0 md:right-0 md:py-4"
