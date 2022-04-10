@@ -494,6 +494,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .block{
   display: block;
 }
@@ -601,6 +605,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -642,6 +660,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 32px;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
+}
+
+.text-\[20px\]{
+  font-size: 20px;
+}
+
+.text-\[19px\]{
+  font-size: 19px;
+}
+
 .font-light{
   font-weight: 300;
 }
@@ -652,6 +687,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-10{
   line-height: 2.5rem;
+}
+
+.leading-6{
+  line-height: 1.5rem;
+}
+
+.leading-8{
+  line-height: 2rem;
 }
 
 .tracking-wide{
@@ -675,6 +718,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-pure-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-light-blue-grey{
+  --tw-text-opacity: 1;
+  color: rgb(90 102 138 / var(--tw-text-opacity));
 }
 
 .opacity-5{
