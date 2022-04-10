@@ -484,6 +484,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3.5rem;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -528,6 +533,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .block{
   display: block;
 }
@@ -554,6 +563,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
+.h-\[398\]{
+  height: 398;
+}
+
+.h-\[450\]{
+  height: 450;
+}
+
 .min-h-full{
   min-height: 100%;
 }
@@ -572,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.w-\[327\]{
+  width: 327;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -588,10 +609,50 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .space-y-16 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-12 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 .rounded{
@@ -713,6 +774,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-\[22px\]{
+  font-size: 22px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
 }
 
 .font-light{

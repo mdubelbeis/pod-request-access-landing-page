@@ -16,112 +16,117 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>Frontend Mentor | Pod request access landing page</title>
   </head>
-  <body
-    class="h-screen w-screen bg-cover bg-mobile-pattern bg-no-repeat bg-dark-blue bg-blend-overlay text-grey-smoke font-chivo-light p-6"
-  >
-    <!-- Logo -->
-    <div class="flex justify-center my-14">
-      <img src="../assets/desktop/logo.svg" alt="logo" />
-    </div>
-    <div class="p-6 md:bg-dark-blue">
-      <header class="flex flex-col items-center space-y-16 mb-10">
-        <!-- Title -->
-
-        <div>
-          <h1
-            class="uppercase text-[24px] leading-10 font-light tracking-wider"
-          >
-            <span class="text-mint-green block"
-              >Publish your podcasts</span
-            >
-            <span class="text-pure-white text-center block"
-              >everywhere.</span
-            >
-          </h1>
-        </div>
-      </header>
-
-      <main class="md:relative">
-        <!-- Info content -->
-        <section class="text-center mb-10">
-          <p class="text-md leading-6 text-grey-smoke">
-            Upload your audio to Pod with a single click. We’ll then
-            distribute your podcast to Spotify, Apple Podcasts, Google
-            Podcasts, Pocket Casts and more!
-          </p>
-        </section>
-
-        <div class="md:relative md:flex md:flex-col-reverse h-20">
-          <!-- Product svg -->
-          <section class="mb-14 md:mb-0">
-            <div
-              class="flex w-full justify-between items-center md:absolute md:bottom-0 md:left-0"
-            >
-              <!-- SPOTIFY -->
-              <div>
-                <img
-                  class="image"
-                  src="../assets/desktop/spotify.svg"
-                  alt="spotify svg"
-                />
-              </div>
-
-              <!-- APPLE PODCAST -->
-              <div>
-                <img
-                  class="image"
-                  src="../assets/desktop/apple-podcast.svg"
-                  alt="Apple podcast svg"
-                />
-              </div>
-
-              <!-- GOOGLE PODCAST -->
-              <div>
-                <img
-                  class="image"
-                  src="../assets/desktop/google-podcasts.svg"
-                  alt="Google podcast svg"
-                />
-              </div>
-
-              <!-- POCKET CASTS -->
-              <div class="svg">
-                <img
-                  class="image"
-                  src="../assets/desktop/pocket-casts.svg"
-                  alt="Pocket Podcast Svg"
-                />
-              </div>
+  <body class="text-grey-smoke font-chivo-light">
+    <div
+      class="bg-cover bg-mobile-pattern bg-no-repeat bg-dark-blue bg-blend-overlay h-screen p-6"
+    >
+      <!-- Logo -->
+      <div class="flex justify-center my-14">
+        <img src="../assets/desktop/logo.svg" alt="logo" />
+      </div>
+      <div class="mt-16 md:bg-dark-blue">
+        <main
+          class="flex flex-col justify-around md:relative space-y-10"
+        >
+          <header class="flex flex-col items-center">
+            <!-- Title -->
+            <div>
+              <h1
+                class="uppercase text-[24px] leading-10 font-light tracking-wider"
+              >
+                <span class="text-mint-green block"
+                  >Publish your podcasts</span
+                >
+                <span class="text-pure-white text-center block"
+                  >everywhere.</span
+                >
+              </h1>
             </div>
+          </header>
+
+          <!-- Info content -->
+          <section class="text-center">
+            <p class="text-md leading-6 text-grey-smoke">
+              Upload your audio to Pod with a single click. We’ll then
+              distribute your podcast to Spotify, Apple Podcasts,
+              Google Podcasts, Pocket Casts and more!
+            </p>
           </section>
 
-          <!-- Email input -->
-          <section class="md:w-9/12">
-            <form>
-              <div class="mb-4">
-                <label for="email"></label>
-                <input
-                  class="w-full rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-none md:absolute md:top-0 md:right-0 md:py-4"
-                  type="email"
-                  placeholder="Email address"
-                  id="email"
-                  name="email"
-                />
-                <div
-                  class="mt-4 md:absolute md:top-2 md:right-2 md:mt-0"
-                >
-                  <button
-                    type="submit"
-                    class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green text-[#000] md:py-2"
-                  >
-                    Request Access
-                  </button>
+          <div
+            class="flex flex-col space-y-12 md:relative md:flex md:flex-col-reverse"
+          >
+            <!-- Product svg -->
+            <section>
+              <div
+                class="flex w-full justify-between items-center md:absolute md:bottom-0 md:left-0"
+              >
+                <!-- SPOTIFY -->
+                <div>
+                  <img
+                    class="image"
+                    src="../assets/desktop/spotify.svg"
+                    alt="spotify svg"
+                  />
+                </div>
+
+                <!-- APPLE PODCAST -->
+                <div>
+                  <img
+                    class="image"
+                    src="../assets/desktop/apple-podcast.svg"
+                    alt="Apple podcast svg"
+                  />
+                </div>
+
+                <!-- GOOGLE PODCAST -->
+                <div>
+                  <img
+                    class="image"
+                    src="../assets/desktop/google-podcasts.svg"
+                    alt="Google podcast svg"
+                  />
+                </div>
+
+                <!-- POCKET CASTS -->
+                <div class="svg">
+                  <img
+                    class="image"
+                    src="../assets/desktop/pocket-casts.svg"
+                    alt="Pocket Podcast Svg"
+                  />
                 </div>
               </div>
-            </form>
-          </section>
-        </div>
-      </main>
+            </section>
+
+            <!-- Email input -->
+            <section class="md:w-9/12">
+              <form>
+                <div class="flex flex-col justify-center">
+                  <label for="email"></label>
+                  <input
+                    class="w-full mb-4 rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-none md:absolute md:top-0 md:right-0 md:py-4"
+                    type="email"
+                    placeholder="Email address"
+                    id="email"
+                    name="email"
+                  />
+                  <div
+                    class="md:absolute md:top-2 md:right-2 md:mt-0"
+                  >
+                    <button
+                      type="submit"
+                      class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green text-[#000] md:py-2"
+                    >
+                      Request Access
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+        </main>
+      </div>
     </div>
   </body>
 </html>
