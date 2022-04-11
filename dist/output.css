@@ -855,6 +855,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     top: 220px;
   }
 
+  .md\:left-8{
+    left: 2rem;
+  }
+
   .md\:my-6{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -1223,6 +1227,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:top-\[140px\]{
     top: 140px;
+  }
+
+  .xl\:right-6{
+    right: 1.5rem;
+  }
+
+  .xl\:right-8{
+    right: 2rem;
+  }
+
+  .xl\:right-10{
+    right: 2.5rem;
+  }
+
+  .xl\:right-4{
+    right: 1rem;
+  }
+
+  .xl\:right-3{
+    right: 0.75rem;
   }
 
   .xl\:my-0{
