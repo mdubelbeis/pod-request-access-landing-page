@@ -583,7 +583,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-mobile-pattern{
-  background-image: url('/dist/mobile/image-host.jpg');
+  background-image: url('/assets/mobile/image-host.jpg');
 }
 
 .bg-cover{
