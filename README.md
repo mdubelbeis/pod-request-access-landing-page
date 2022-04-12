@@ -13,10 +13,10 @@ This is a solution to the [Pod request access landing page challenge on Frontend
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
+    - [More practice](#more-practice)
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -32,15 +32,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![mobile design](./assets/screenshots/mobile.png)
+![tablet design](./assets/screenshots/tablet.png)
+![desktop design](./assets/screenshots/desktop.png)
+![desktop+ design](./assets/screenshots/desktop2.png)
 
 ### Links
 
@@ -86,33 +81,69 @@ The hardest challenge was the structuring of the document with Tailwind. Tailwin
 
 I do love how Tailwind implements responsive design (sm:, md:, lg:, etc.) and I can see how in the future and through practice, Tailwind will be an extreme asset and tool in my design practice.
 
+### More practice
+
+I need to practice with TailwindCSS and it's responsiveness when it comes to images. The widths/height/max-width/etc. gave me an extremely hard-time and will need to practice this more moving forward. Although easy to understand and accomplish with CSS, the tailwind implementation caused much headache.
+
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+For further projects/challenges/etc. I will continue my normal practice of putting my ideas and planning my approach before putting any code into an editor. I will also be looking more into the documentation and learning more of the images element using:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+```html
+<img
+  srcset="
+    elva-fairy-320w.jpg,
+    elva-fairy-480w.jpg 1.5x,
+    elva-fairy-640w.jpg 2x
+  "
+  src="elva-fairy-640w.jpg"
+  alt="Elva dressed as a fairy"
+/>
+```
+
+I beleive this approade could have helped alot in the process of this project, instead of using multiple image tags. I will try this approach soon in this project to test out my ideas but want to get the method and understanding down before implementing.
+
+I also intend to continue focusing on Tailwind and digging deeper into the documentation. I was able to learn more about the extend{} theme and manipulating the tailwind.config.js file: I learned the importance over using extend{} theme and how that can have effect on the use of Tailwind's default params.
+
+```js
+module.exports = {
+  content: ['./*.{html,js}'],
+  theme: {
+    fontFamily: {
+      'chivo-light': ['Chivo', 'sans-serif'],
+    },
+    extend: {
+      backgroundImage: {
+        'mobile-pattern': "url('/assets/mobile/image-host.jpg')",
+        'tablet-pattern': "url('/assets/tablet/image-host.jpg')",
+        'desktop-pattern': "url('/assets/desktop/image-host.jpg')",
+        'dot-pattern': "url('/assets/desktop/bg-pattern-dots.svg')",
+      },
+      colors: {
+        'mint-green': '#54E6AF',
+        'mint-green-light': '#B3FFE2',
+        'dark-blue-grey': '#2C344B',
+        'light-blue-grey': '#5A668A',
+        'grey-smoke': '#C3CBE5',
+        'dark-blue': '#121725',
+        'pure-white': '#FFFFFF',
+      },
+    },
+  },
+  plugins: [],
+};
+```
+
+I also attempted to deploy to Vercel but continued to get errors. Moving forward I will be learning and researching the documentation to assist in deploying static sites and ensuring my dev structure fits requirements.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Github Pages DOCS](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site) - This helped me for understanding why I was having many issues with deploying with github pages.
+- [TailwindCSS DOCS](https://tailwindcss.com/docs/installation) - This of course helped with the syntax needed to complete this project.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
-```
-
-```
+- Website - [Mason J. Dubelbeis](Soon!)
+- Frontend Mentor - [@mdubelbeis](https://www.frontendmentor.io/profile/mdubelbeis)
+- Twitter - [@mason_dubelbeis](https://twitter.com/mason_dubelbeis)
+- Linkedin - [](https://www.linkedin.com/in/mason-dub/)
