@@ -139,20 +139,20 @@
 
             <!-- Email input -->
             <section class="mt-14">
-              <form>
+              <form id="form">
                 <div
                   class="flex flex-col justify-center md:flex-col-reverse"
                 >
                   <label for="email"></label>
                   <input
                     class="w-full rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-none md:absolute md:top-0 md:right-0 md:py-4"
-                    type="email"
+                    type="text"
                     placeholder="Email address"
                     id="email"
                     name="email"
                   />
-                  <div class="hidden ml-4 text-red-500">
-                    <p class="text-red-500 pl-2 pb-4">
+                  <div id="error" class="hidden ml-4 text-red-500">
+                    <p class="text-red-500 pl-2">
                       Oops! Please check your email
                     </p>
                   </div>
@@ -161,7 +161,8 @@
                   >
                     <button
                       type="submit"
-                      class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green text-[#000] md:py-2"
+                      class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green hover:bg-mint-green-light text-[#000] md:py-2"
+                      id="button"
                     >
                       Request Access
                     </button>
@@ -180,5 +181,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

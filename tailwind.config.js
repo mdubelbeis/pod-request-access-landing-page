@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         'mint-green': '#54E6AF',
+        'mint-green-light': '#B3FFE2',
         'dark-blue-grey': '#2C344B',
         'light-blue-grey': '#5A668A',
         'grey-smoke': '#C3CBE5',
