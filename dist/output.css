@@ -583,7 +583,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .bg-mobile-pattern{
-  background-image: url('/assets/mobile/image-host.jpg');
+  background-image: url('./assets/mobile/image-host.jpg');
 }
 
 .bg-cover{
@@ -719,28 +719,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 1.5rem;
   }
 
+  .md\:top-\[280px\]{
+    top: 280px;
+  }
+
   .md\:top-2{
     top: 0.5rem;
   }
 
   .md\:right-2{
     right: 0.5rem;
-  }
-
-  .md\:top-\[250px\]{
-    top: 250px;
-  }
-
-  .md\:top-\[300px\]{
-    top: 300px;
-  }
-
-  .md\:top-\[275px\]{
-    top: 275px;
-  }
-
-  .md\:top-\[280px\]{
-    top: 280px;
   }
 
   .md\:my-6{
