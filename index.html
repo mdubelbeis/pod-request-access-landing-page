@@ -61,136 +61,137 @@
         alt="polka dot pattern"
       />
     </aside>
-    <header class="relative p-6 xl:p-0">
-      <!-- Logo -->
-      <div
-        role="region"
-        class="flex justify-center my-14 md:justify-start md:my-6 md:mx-4 xl:my-0"
-      >
-        <img src="./assets/desktop/logo.svg" alt="logo" />
-      </div>
-      <div
-        class="mt-8 md:bg-dark-blue 2xl:flex 2xl:justify-center 2xl:items-center 2xl:w-full 2xl:h-full 2xl:gap-x-16"
-      >
-        <main
-          class="flex flex-col justify-around space-y-10 md:bg-dark-blue md:w-[635px] md:absolute md:left-6 md:top-[280px] xl:w-[732px] xl:top-[130px] 2xl:static"
+    <main>
+      <div class="relative p-6 xl:p-0">
+        <!-- Logo -->
+        <div
+          class="flex justify-center my-14 md:justify-start md:my-6 md:mx-2 xl:my-0"
         >
-          <header class="flex flex-col items-center md:items-start">
-            <!-- Title -->
-            <div class="md:mt-20">
-              <h1
-                class="uppercase text-[24px] space-y-2 font-light tracking-wider md:text-4xl"
-              >
-                <span class="text-mint-green block"
-                  >Publish your podcasts</span
-                >
-                <span
-                  class="text-pure-white text-center block md:text-left"
-                  >everywhere.</span
-                >
-              </h1>
-            </div>
-          </header>
-
-          <!-- Info content -->
-          <div class="text-center md:w-9/12">
-            <h2
-              class="text-md leading-7 text-grey-smoke md:text-left md:tracking-widest"
-            >
-              Upload your audio to Pod with a single click. We’ll then
-              distribute your podcast to Spotify, Apple Podcasts,
-              Google Podcasts, Pocket Casts and more!
-            </h2>
-          </div>
-
+          <img src="./assets/desktop/logo.svg" alt="logo" />
+        </div>
+        <div
+          class="mt-8 md:bg-dark-blue 2xl:flex 2xl:justify-center 2xl:items-center 2xl:w-full 2xl:h-full 2xl:gap-x-16"
+        >
           <div
-            class="flex flex-col md:relative md:flex md:flex-col-reverse md:w-9/12"
+            class="flex flex-col justify-around space-y-10 md:bg-dark-blue md:w-[635px] md:absolute md:left-6 md:top-[280px] xl:w-[732px] xl:top-[130px] 2xl:static"
           >
-            <!-- Product svg -->
-            <div class="md:mt-16">
-              <div class="flex w-full justify-between items-center">
-                <!-- SPOTIFY -->
-                <div>
-                  <img
-                    class="image"
-                    src="./assets/desktop/spotify.svg"
-                    alt="spotify svg"
-                  />
-                </div>
+            <header class="flex flex-col items-center md:items-start">
+              <!-- Title -->
+              <div class="md:mt-20">
+                <h1
+                  class="uppercase text-[24px] space-y-2 font-light tracking-wider md:text-4xl"
+                >
+                  <span class="text-mint-green block"
+                    >Publish your podcasts</span
+                  >
+                  <span
+                    class="text-pure-white text-center block md:text-left"
+                    >everywhere.</span
+                  >
+                </h1>
+              </div>
+            </header>
 
-                <!-- APPLE PODCAST -->
-                <div>
-                  <img
-                    class="image"
-                    src="./assets/desktop/apple-podcast.svg"
-                    alt="Apple podcast svg"
-                  />
-                </div>
+            <!-- Info content -->
+            <div class="text-center md:w-9/12">
+              <h2
+                class="text-md leading-7 text-grey-smoke md:text-left md:tracking-widest"
+              >
+                Upload your audio to Pod with a single click. We’ll
+                then distribute your podcast to Spotify, Apple
+                Podcasts, Google Podcasts, Pocket Casts and more!
+              </h2>
+            </div>
 
-                <!-- GOOGLE PODCAST -->
-                <div>
-                  <img
-                    class="image"
-                    src="./assets/desktop/google-podcasts.svg"
-                    alt="Google podcast svg"
-                  />
-                </div>
+            <div
+              class="flex flex-col md:relative md:flex md:flex-col-reverse md:w-9/12"
+            >
+              <!-- Product svg -->
+              <div class="md:mt-16">
+                <div class="flex w-full justify-between items-center">
+                  <!-- SPOTIFY -->
+                  <div>
+                    <img
+                      class="image"
+                      src="./assets/desktop/spotify.svg"
+                      alt="spotify svg"
+                    />
+                  </div>
 
-                <!-- POCKET CASTS -->
-                <div class="svg">
-                  <img
-                    class="image"
-                    src="./assets/desktop/pocket-casts.svg"
-                    alt="Pocket Podcast Svg"
-                  />
+                  <!-- APPLE PODCAST -->
+                  <div>
+                    <img
+                      class="image"
+                      src="./assets/desktop/apple-podcast.svg"
+                      alt="Apple podcast svg"
+                    />
+                  </div>
+
+                  <!-- GOOGLE PODCAST -->
+                  <div>
+                    <img
+                      class="image"
+                      src="./assets/desktop/google-podcasts.svg"
+                      alt="Google podcast svg"
+                    />
+                  </div>
+
+                  <!-- POCKET CASTS -->
+                  <div class="svg">
+                    <img
+                      class="image"
+                      src="./assets/desktop/pocket-casts.svg"
+                      alt="Pocket Podcast Svg"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Email input -->
-            <div class="mt-14">
-              <form id="form">
-                <div
-                  class="flex flex-col justify-center md:flex-col-reverse"
-                >
-                  <label for="email"></label>
-                  <input
-                    class="w-full rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-none md:absolute md:top-0 md:right-0 md:py-4"
-                    type="text"
-                    placeholder="Email address"
-                    id="email"
-                    name="email"
-                  />
-                  <div id="error" class="hidden ml-4 text-red-500">
-                    <p class="text-red-500 pl-2">
-                      Oops! Please check your email
-                    </p>
-                  </div>
+              <!-- Email input -->
+              <div class="mt-14">
+                <form id="form">
                   <div
-                    class="mt-4 md:absolute md:top-2 md:right-2 md:mt-0"
+                    class="flex flex-col justify-center md:flex-col-reverse"
                   >
-                    <button
-                      type="submit"
-                      class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green hover:bg-mint-green-light text-[#000] md:py-2"
-                      id="button"
+                    <label for="email"></label>
+                    <input
+                      class="w-full rounded-full border-none py-3 px-6 text-md bg-dark-blue-grey outline-none md:absolute md:top-0 md:right-0 md:py-4"
+                      type="text"
+                      placeholder="Email address"
+                      id="email"
+                      name="email"
+                    />
+                    <div id="error" class="hidden ml-4 text-red-500">
+                      <p class="text-red-500 pl-2">
+                        Oops! Please check your email
+                      </p>
+                    </div>
+                    <div
+                      class="mt-4 md:absolute md:top-2 md:right-2 md:mt-0"
                     >
-                      Request Access
-                    </button>
+                      <button
+                        type="submit"
+                        class="w-full rounded-full border-none py-3 px-6 text-md bg-mint-green hover:bg-mint-green-light text-[#000] md:py-2"
+                        id="button"
+                      >
+                        Request Access
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
-        </main>
-        <aside class="hidden 2xl:block 2xl:w-3/6 2xl:rounded-xl">
-          <img
-            class="2xl:w-[500px] 2xl:h-[500px] 2xl:rounded-xl object-cover"
-            src="./assets/desktop/image-host.jpg"
-            alt="guy with headphones"
-          />
-        </aside>
+          <aside class="hidden 2xl:block 2xl:w-3/6 2xl:rounded-xl">
+            <img
+              class="2xl:w-[500px] 2xl:h-[500px] 2xl:rounded-xl object-cover"
+              src="./assets/desktop/image-host.jpg"
+              alt="guy with headphones"
+            />
+          </aside>
+        </div>
       </div>
-    </header>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
